@@ -9,6 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
+                java --version 
             }
         }
          stage('SAST') {
