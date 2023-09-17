@@ -4,12 +4,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...'
+                echo 'JAVA VERSION - '
+                sh 'java -version'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                java --version 
             }
         }
          stage('SAST') {
